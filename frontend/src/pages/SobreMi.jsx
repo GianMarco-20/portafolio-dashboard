@@ -39,7 +39,7 @@ const SobreMi = () => {
               <InfoCard label="Nombre completo" value="Gian Marco Castañeda Caycho" />
               <InfoCard label="Edad" value="21 años" />
               <InfoCard label="Ubicación" value="Mala, Cañete, Lima, Perú" />
-              <InfoCard label="Email" value="gianmarco20y@gmail.com" />
+              <InfoCard label="Email" value="75040140gm20@gmail.com" />
             </div>
 
             {/* HABILIDADES */}
