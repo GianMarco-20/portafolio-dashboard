@@ -1,15 +1,14 @@
+// frontend/src/App.jsx
 import React from "react";
-import "./index.css";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
-    <div className="flex items-center justify-center h-screen bg-slate-900">
-      <h1 className="text-5xl font-bold text-teal-400">
-        🚀 Tailwind está funcionando
-      </h1>
-    </div>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   );
 }
 
 export default App;
-
