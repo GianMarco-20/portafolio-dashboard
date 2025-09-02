@@ -1,3 +1,4 @@
+// src/pages/SobreMi.jsx
 import React from "react";
 import { FaReact, FaPython, FaDatabase, FaGithub } from "react-icons/fa";
 import { SiTailwindcss, SiHtml5, SiCss3, SiJavascript, SiTensorflow } from "react-icons/si";
@@ -5,9 +6,7 @@ import { SiTailwindcss, SiHtml5, SiCss3, SiJavascript, SiTensorflow } from "reac
 const SobreMi = () => {
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
-
       <div className="flex-1 px-4 md:px-12 pt-8 pb-12 flex flex-col gap-8 max-w-6xl mx-auto w-full">
-
         <div className="flex flex-col md:flex-row w-full gap-8">
 
           {/* FOTO + NOMBRE */}
@@ -15,10 +14,10 @@ const SobreMi = () => {
             <img
               src="/images/mi-foto.JPG"
               alt="Mi foto"
-              className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-[#25D366] shadow-lg object-cover"
+              className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-[#25D366] shadow-lg object-cover transition-transform duration-300 hover:scale-105"
             />
             <div className="mt-4 text-center md:text-left">
-              <h1 className="text-3xl md:text-4xl font-semibold text-gray-900">Gian Marco</h1>
+              <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 transition-transform duration-300 hover:translate-y-1">Gian Marco</h1>
               <p className="text-[#25D366] font-medium mt-1 text-lg">Ingeniero de Sistemas</p>
             </div>
           </div>
@@ -27,10 +26,10 @@ const SobreMi = () => {
           <div className="flex-1 flex flex-col gap-6 w-full md:w-2/3">
 
             {/* DESCRIPCIÓN */}
-            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
               <h2 className="text-2xl font-semibold text-gray-800 mb-3">Sobre mí</h2>
               <p className="text-gray-700 leading-relaxed text-justify">
-                Soy estudiante de Ingeniería de Sistemas apasionado por el desarrollo web, la inteligencia artificial y la creación de soluciones tecnológicas que impacten positivamente en la comunidad. Me encanta aprender y participar en proyectos que me desafíen profesionalmente.
+                Soy estudiante de Ingeniería de Sistemas con experiencia en desarrollo web, análisis de datos y gestión de bases de datos. He participado en cursos y conferencias sobre Excel avanzado, marketing digital con inteligencia artificial, innovación tecnológica y desarrollo de software. Me apasiona crear soluciones tecnológicas que mejoren procesos y contribuyan positivamente a la comunidad, siempre aprendiendo y participando en proyectos que me desafíen profesionalmente.
               </p>
             </div>
 
@@ -43,7 +42,7 @@ const SobreMi = () => {
             </div>
 
             {/* HABILIDADES */}
-            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">Habilidades</h2>
 
               {/* Frontend */}
@@ -80,13 +79,12 @@ const SobreMi = () => {
 };
 
 const InfoCard = ({ label, value }) => (
-  <div className="bg-white rounded-xl shadow-md p-4 flex flex-col min-w-0">
+  <div className="bg-white rounded-xl shadow-md p-4 flex flex-col min-w-0 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
     <span className="text-gray-500 text-sm">{label}</span>
     <span className="text-gray-900 font-medium truncate">{value}</span>
   </div>
 );
 
-/* Chip de habilidad con icono, color y animación hover */
 const SkillBadge = ({ name, color, icon }) => {
   const colors = {
     green: "bg-green-100 text-green-600 hover:bg-green-200",
