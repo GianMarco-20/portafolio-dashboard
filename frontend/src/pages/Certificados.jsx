@@ -15,9 +15,17 @@ const idiomas = [
 
 // Sección de Cursos
 const cursos = [
+    {
+    nombre: "Excel Intermedio",
+    descripcion: "Funciones de Excel, gestión de datos, análisis con tablas y gráficos dinámicos, validación y protección de datos",
+    institucion: "Instituto peruano de negocios",
+    fecha: "24 de abril de 2025",
+    imagen: "/images/excelintermedio.jpg",
+    enlace: "/pdfs/excelintermedio.pdf",
+  },
   {
     nombre: "Marketing digital con inteligencia artificial",
-    descripcion: "Utilizar la IA para analizar datos, medir resultados y mejorar continuamente tus campañas de marketing.",
+    descripcion: "Utilizar la IA para analizar datos, medir resultados y mejorar continuamente tus campañas de marketing",
     institucion: "Centro sudamericano de formación-SUDITEP",
     fecha: "22 de abril de 2025",
     imagen: "/images/marketingdigital.jpg",
@@ -60,7 +68,7 @@ const conferencias = [
     enlace: "/pdfs/innovacion.pdf",
   },
     {
-    nombre: "“Primer Acercamiento para el Fortalecimiento del Ecosistema Emprendedor de la Universidad Nacional de Cañete”,",
+    nombre: "Primer Acercamiento para el Fortalecimiento del Ecosistema Emprendedor de la Universidad Nacional de Cañete",
     descripcion: "Participación en emprendimiento e innovación",
     institucion: "Dirección de Incubadora de Empresas UNDC",
     fecha: "10 de abril de 2025",
